@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="input-container">
+            <input id="Search" type="text" placeholder="Enter location..." />
+            <button id="search" type="button">Search</button>
+        </div>
+        <div class="hint" id="hint"></div>
+    </header>
+
+    <main>
+        <div class="weather-container">
+            <section class="card temp-card">
+                <div class="temperature">-- °C</div>
+                <div class="sub">Feels like <span class="feels">--</span> °C</div>
+            </section>
+
+            <section class="card meta-card">
+                <div class="location-row">
+                    <div class="pin">📍</div>
+                    <div class="location">City</div>
+                </div>
+
+                <div class="meta">
+                    <div class="meta-line"><span class="label">Time</span> <span class="time">--:--</span></div>
+                    <div class="meta-line"><span class="label">Day</span> <span class="day">---</span></div>
+                    <div class="meta-line"><span class="label">Date</span> <span class="date">----</span></div>
+                </div>
+
+                <div class="stats">
+                    <div class="pill">💧 Humidity <span class="humidity">--</span>%</div>
+                    <div class="pill">🌬 Wind <span class="wind">--</span> kph</div>
+                    <div class="pill">🧭 Pressure <span class="pressure">--</span> mb</div>
+                </div>
+            </section>
+
+            <section class="card status-card weather-status" id="status">
+                <div class="status-top">
+                    <div class="icon">
+                        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather icon"
+                            class="image" />
+                    </div>
+
+                    <div class="cond-text">
+                        <div class="condition">---</div>
+                        <div class="updated">Updated: <span class="updatedAt">--</span></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
